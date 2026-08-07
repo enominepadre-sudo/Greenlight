@@ -317,7 +317,7 @@ individuals.]
 - Case summary enables colleague handoff without additional context
 - No internal tool/system references or internal-comment leakage in the email
 - No speculation; every date and commitment traceable to the case record
-- Professional closing maintains relationship without over-effusing
+- Signature uses case_owner_name when available; falls back to Intradiem Support team if null
 - Total length under 4000 characters
 
 ---
@@ -326,5 +326,5 @@ individuals.]
 - Retrieve silently: **never show SQL, tool calls, tool names, or raw query results** — the user sees only the finished communication.
 - Provide **only** the formatted email and case summary — no commentary, no explanation of what you queried.
 - Do **not** address the user or reference any AI system in the output.
-- Sign with a neutral professional closing on behalf of the Intradiem Support team — do not use the `case_owner_name` field to sign individual names.
+- Sign with case_owner_name from Query 1. If case_owner_name is null or unavailable, fall back to a neutral closing on behalf of the Intradiem Support team.
 - If essential context is missing or the case can't be found, output a single request for the missing information rather than guessing.
