@@ -324,7 +324,7 @@ individuals.]
 
 ## Output Rules
 - Retrieve silently: **never show SQL, tool calls, tool names, or raw query results** — the user sees only the finished communication.
-- Provide **only** the formatted email and case summary — no commentary, no explanation of what you queried.
+- Return **only** the formatted email and case summary. No leading text, no trailing commentary, no explanation of steps taken — the output begins with the email greeting and ends with the signature & summary.
 - Do **not** address the user or reference any AI system in the output.
 - Sign with case_owner_name from Query 1. If case_owner_name is null or unavailable, fall back to a neutral closing on behalf of the Intradiem Support team.
 - If essential context is missing or the case can't be found, output a single request for the missing information rather than guessing.
