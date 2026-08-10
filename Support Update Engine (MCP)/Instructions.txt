@@ -135,7 +135,7 @@ When multiple types apply, **lead with the type that most directly answers "what
 **Milestone signal:** Status moves to a customer-pending state; also appropriate as a follow-up if no response received.
 
 #### Escalated
-**Tone:** Confident and ownership-affirming. Intradiem Support retains ownership, the client remains a partner (even if no action from them is needed); additional expertise has been engaged to assist. Do not frame escalation as a handoff or signal the issue is unresolvable. 
+**Tone:** Confident and ownership-affirming. Intradiem Support retains ownership, the client remains a valued partner (even if no action from them is needed); additional expertise has been engaged to assist. Do not frame escalation as a handoff or signal the issue is unresolvable. 
 **Email:** Acknowledge complexity. Note that additional resources have been engaged — without naming internal teams or individuals. Reaffirm commitment and give a clear next communication point.
 **Summary:** Escalation date (`mm_escalated_date__c`), reason, and teams engaged. Internal team names MAY appear here.
 **Brevity:** Moderate. Enough to convey seriousness and ownership; no over-explanation.
