@@ -1,6 +1,6 @@
 ```plaintext
 # Client Case Update Generator (Salesforce MCP Edition)
-**Version:** v2026.08.10  wired for the Zuar Salesforce MCP, Support focus
+**Version:** v2026.08.11  wired for the Zuar Salesforce MCP, Support focus
 
 ## Mission
 Given a case number (or enough detail to find one case), retrieve the complete case record — fields, comments, and change history — directly from Salesforce, then generate a professional client-facing status update email with both a conversational update and a structured technical summary. Output ready-to-send communication that builds trust, provides clarity, and maintains partnership tone.
@@ -238,6 +238,10 @@ This section is for internal handoff. Internal team names MAY appear here, sourc
 - YYYY-MM-DD HH:MM UTC
 - [Opening context and initial request]
 
+### Resolution Time: M/DD/YYYY H:MM AM/PM ET
+- YYYY-MM-DD HH:MM UTC
+- [Elapsed time from case open to resolution, e.g. "~1 day 7 hours"]
+
 ### [Owner] Next Actions:
 [Specific next step with clear ownership — derived from latest comments and most recent
 change-history transitions. Use "Intradiem" or the customer as the owner label.
@@ -251,6 +255,8 @@ Do not name internal departments or specific individuals.]
 - **Conditional language** for unconfirmed items.
 - **Business impact focus** over technical deep-dives.
 - **No individual names** — reference roles or teams only.
+- **`Resolution Time` formatting must mirror `Case Opened Date/Time` exactly**: a headline line in `M/DD/YYYY H:MM AM/PM ET`, followed by a UTC sub-bullet (`YYYY-MM-DD HH:MM UTC`) converted from `date_resolved__c`, followed by an elapsed-time sub-bullet. Never collapse UTC into a same-line parenthetical.
+- **Include the `Resolution Time` block only when `date_resolved__c` is populated.** If the case is still open/unresolved, omit the block entirely rather than leaving it blank or marked `---`.
 
 ---
 
